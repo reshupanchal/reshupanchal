@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For My Husband ❤️</title>
+
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #fff176, #ffd54f);
+            overflow: hidden;
+            font-family: cursive;
+        }
+
+        /* Message */
+        .message {
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            color: #d50000;
+            font-size: 30px;
+            text-shadow: 2px 2px 5px white;
+        }
+
+        /* Girl */
+        .girl {
+            position: absolute;
+            bottom: -250px;
+            left: 25%;
+            font-size: 130px;
+            animation: girlUp 4s forwards;
+        }
+
+        /* Boy */
+        .boy {
+            position: absolute;
+            bottom: 40px;
+            right: 25%;
+            font-size: 130px;
+        }
+
+        /* Rose */
+        .rose {
+            position: absolute;
+            bottom: 120px;
+            left: 32%;
+            font-size: 50px;
+            opacity: 0;
+        }
+
+        /* Love Text */
+        .loveText {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            color: #d50000;
+            text-shadow: 3px 3px 10px white;
+            opacity: 0;
+        }
+
+        /* Buttons */
+        .buttons {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background: #ff1744;
+            color: white;
+        }
+
+        .no {
+            background: #616161;
+            color: white;
+        }
+
+        /* Animations */
+
+        @keyframes girlUp {
+            0% {
+                bottom: -250px;
+            }
+
+            100% {
+                bottom: 40px;
+            }
+        }
+
+        @keyframes giveRose {
+            0% {
+                left: 32%;
+                opacity: 1;
+            }
+
+            100% {
+                left: 62%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Message -->
+    <div class="message">
+        💖 My Dear Husband 💖 <br><br>
+        You Are My Life, My Love, My Everything ❤️<br>
+        Will You Always Be Mine? 💍
+    </div>
+
+    <!-- Girl & Boy -->
+    <div class="girl">👧</div>
+    <div class="boy">👦</div>
+
+    <!-- Rose -->
+    <div class="rose" id="rose">🌹</div>
+
+    <!-- Love Text -->
+    <div class="loveText" id="loveText">
+        I LOVE YOU ANAND❤️
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button class="yes" onclick="sayYes()">YES ❤️</button>
+        <button class="no" onclick="sayNo()">NO 💔</button>
+    </div>
+
+    <!-- Audio -->
+    <audio id="music">
+        <source src="j.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+
+        /* Rose auto move after girl comes */
+
+        setTimeout(() => {
+
+            let rose = document.getElementById("rose");
+            rose.style.opacity = "1";
+            rose.style.animation = "giveRose 3s forwards";
+
+        }, 4000);
+
+
+        /* Show Love Text */
+
+        setTimeout(() => {
+
+            document.getElementById("loveText").style.opacity = "1";
+
+        }, 7000);
+
+
+        /* Music */
+
+        function sayYes() {
+            document.getElementById("music").play();
+        }
+
+        function sayNo() {
+            alert("No option not allowed 😜 You are Mine Forever ❤️");
+        }
+
+    </script>
+
+</body>
+
+</html>
