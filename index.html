@@ -1,189 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>For My Husband ❤️</title>
-
-    <style>
-        /* Background */
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to top, #fff176, #ffd54f);
-            overflow: hidden;
-            font-family: cursive;
-        }
-
-        /* Message */
-        .message {
-            position: absolute;
-            top: 10%;
-            text-align: center;
-            color: #d50000;
-            font-size: 30px;
-            text-shadow: 2px 2px 5px white;
-        }
-
-        /* Girl */
-        .girl {
-            position: absolute;
-            bottom: -250px;
-            left: 25%;
-            font-size: 130px;
-            animation: girlUp 4s forwards;
-        }
-
-        /* Boy */
-        .boy {
-            position: absolute;
-            bottom: 40px;
-            right: 25%;
-            font-size: 130px;
-        }
-
-        /* Rose */
-        .rose {
-            position: absolute;
-            bottom: 120px;
-            left: 32%;
-            font-size: 50px;
-            opacity: 0;
-        }
-
-        /* Love Text */
-        .loveText {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            font-size: 60px;
-            font-weight: bold;
-            color: #d50000;
-            text-shadow: 3px 3px 10px white;
-            opacity: 0;
-        }
-
-        /* Buttons */
-        .buttons {
-            position: absolute;
-            bottom: 20px;
-        }
-
-        button {
-            padding: 12px 25px;
-            font-size: 18px;
-            border: none;
-            border-radius: 25px;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        .yes {
-            background: #ff1744;
-            color: white;
-        }
-
-        .no {
-            background: #616161;
-            color: white;
-        }
-
-        /* Animations */
-
-        @keyframes girlUp {
-            0% {
-                bottom: -250px;
-            }
-
-            100% {
-                bottom: 40px;
-            }
-        }
-
-        @keyframes giveRose {
-            0% {
-                left: 32%;
-                opacity: 1;
-            }
-
-            100% {
-                left: 62%;
-                opacity: 1;
-            }
-        }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reshma Panchal | Web Developer</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header>
+  <a class="brand" href="#home"><b>RP</b><span><strong><i>RESHMA</i> PANCHAL</strong><small>WEB DEVELOPER</small></span></a>
+  <button class="menu" aria-label="Menu">☰</button>
+  <nav><a class="active" href="#home">HOME</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a><a class="hire" href="#contact">♙ &nbsp; HIRE ME</a></nav>
+</header>
 
-    <!-- Message -->
-    <div class="message">
-        💖 My Dear Husband 💖 <br><br>
-        You Are My Life, My Love, My Everything ❤️<br>
-        Will You Always Be Mine? 💍
-    </div>
+<main>
+<section id="home" class="hero">
+ <div class="hero-copy">
+  <div class="script">Hello, I'm</div><h1>Reshma<br><span>Panchal</span></h1>
+  <h2>WEB DEVELOPER</h2>
+  <p>I build modern, responsive and user-friendly websites that help businesses grow and create a strong online presence.</p>
+  <div class="buttons"><a class="primary" href="./Reshma_Panchal.pdf" id="downloadCv" target="_blank">DOWNLOAD CV &nbsp; ⇩</a><a href="#contact">CONTACT ME &nbsp; ✈</a></div>
+  <div class="social"><a href="https://www.linkedin.com/in/reshma-panchal-021405267/" target="_blank">in</a><a href="mailto:reshmapanchal8689@gmail.com">✉</a></div>
+ </div>
+ <div class="hero-visual"><div class="ambient"></div><img src="hero-profile.png" alt="Reshma Panchal"><span class="spark s1">✦</span><span class="spark s2">✦</span></div>
+</section>
 
-    <!-- Girl & Boy -->
-    <div class="girl">👧</div>
-    <div class="boy">👦</div>
+<section id="about" class="about panel">
+ <div class="profile-small"><img src="hero-profile.png" alt=""><span>Reshma♡</span></div>
+ <div class="about-copy"><h3>ABOUT ME</h3><p>I'm a passionate Angular Developer with 8+ years of experience building high-performance web applications. I love turning ideas into beautiful, functional and scalable solutions.</p>
+ <ul><li>8+ Years of Experience</li><li>Strong in Angular & Frontend Technologies</li><li>Clean Code & Best Practices</li><li>On-time Delivery & Client Satisfaction</li></ul></div>
+ <div class="stats"><div><b>▣</b><strong>8+</strong><small>Years Experience</small></div><div><b>〈/〉</b><strong>20+</strong><small>Projects Completed</small></div><div><b>☺</b><strong>15+</strong><small>Happy Clients</small></div><div><b>✺</b><strong>100%</strong><small>Client Satisfaction</small></div></div>
+</section>
 
-    <!-- Rose -->
-    <div class="rose" id="rose">🌹</div>
+<section id="services" class="section">
+ <div class="heading"><small>WHAT I DO</small><h2>— &nbsp; Services I Offer &nbsp; —</h2></div>
+ <div class="service-grid">
+  <article><div>▣</div><h3>Website Development</h3><p>Responsive and modern websites tailored to your business needs.</p></article>
+  <article><div>🛒</div><h3>E-commerce Solutions</h3><p>Build secure and scalable e-commerce websites that sell.</p></article>
+  <article><div>▯</div><h3>Responsive Design</h3><p>Mobile-friendly designs that look perfect on every device.</p></article>
+  <article><div>〈/〉</div><h3>Frontend Development</h3><p>Clean, efficient and interactive frontend solutions.</p></article>
+  <article><div>🚀</div><h3>Performance Optimization</h3><p>Speed up your website for better performance and SEO.</p></article>
+ </div>
+</section>
 
-    <!-- Love Text -->
-    <div class="loveText" id="loveText">
-        I LOVE YOU ANAND❤️
-    </div>
+<section class="work panel">
+ <div id="skills" class="skills"><h3>MY SKILLS</h3>
+  <div class="skill"><label>Angular <b>90%</b></label><i><u style="width:90%"></u></i></div>
+  <div class="skill"><label>TypeScript <b>85%</b></label><i><u style="width:85%"></u></i></div>
+  <div class="skill"><label>HTML / CSS / SCSS <b>90%</b></label><i><u style="width:90%"></u></i></div>
+  <div class="skill"><label>JavaScript <b>85%</b></label><i><u style="width:85%"></u></i></div>
+  <div class="skill"><label>RxJS <b>80%</b></label><i><u style="width:80%"></u></i></div>
+  <div class="skill"><label>Bootstrap / Material <b>85%</b></label><i><u style="width:85%"></u></i></div>
+  <div class="skill"><label>REST API Integration <b>90%</b></label><i><u style="width:90%"></u></i></div>
+ </div>
+ <div id="projects" class="project-wrap"><div class="project-title"><h3>FEATURED PROJECTS</h3><button>View All Projects</button></div>
+  <div class="projects">
+   <article><div class="mock ecommerce">E-COMMERCE</div><h3>E-Commerce Website</h3><p>A fully functional e-commerce platform with product, cart and payment integration.</p><span>Angular</span><span>TypeScript</span><span>SCSS</span></article>
+   <article><div class="mock dashboard">ADMIN DASHBOARD</div><h3>Admin Dashboard</h3><p>A modern admin dashboard with analytics, charts and user management.</p><span>Angular</span><span>Chart.js</span><span>Material</span></article>
+   <article><div class="mock portfolio"><img src="hero-profile.png" alt=""></div><h3>Portfolio Website</h3><p>Personal portfolio website showcasing projects, skills and experience.</p><span>HTML</span><span>CSS</span><span>JavaScript</span></article>
+  </div>
+ </div>
+</section>
 
-    <!-- Buttons -->
-    <div class="buttons">
-        <button class="yes" onclick="sayYes()">YES ❤️</button>
-        <button class="no" onclick="sayNo()">NO 💔</button>
-    </div>
+<section id="experience" class="section added-section">
+ <div class="heading"><small>PROFESSIONAL EXPERIENCE</small><h2>— Experience & Career Journey —</h2></div>
+ <div class="added-grid">
+  <article><h3>Angular Developer — Rigel Networks / SMFG India</h3><p>Built fintech applications using Angular 19, TypeScript, SCSS, RxJS, Reactive Forms, Angular Material and REST APIs. Worked on standalone architecture, performance optimization and AI-assisted development.</p></article>
+  <article><h3>Angular Developer — Gmoney</h3><p>Developed fintech and healthcare modules including hospital onboarding, OTP authentication, profile management, complex multi-step forms and secure API integrations.</p></article>
+  <article><h3>Software Engineer — Hurix Digital</h3><p>Built responsive education and banking applications, reusable UI components and REST API integrations, and coordinated a 7-member development team.</p></article>
+  <article><h3>Fintech & Web Development Experience</h3><p>Worked with Markets Mojo, Flexiloans and Mastertech on financial dashboards, Chart.js visualizations, loan workflows, customer portals and business websites.</p></article>
+ </div>
+</section>
+<section id="advanced-skills" class="section added-section">
+ <div class="heading"><small>MORE TECHNICAL SKILLS</small><h2>— Frontend, Python & Generative AI —</h2></div>
+ <div class="tech-tags"><span>Angular 6–19</span><span>TypeScript</span><span>JavaScript ES6+</span><span>RxJS</span><span>Reactive Forms</span><span>REST APIs</span><span>Angular Material</span><span>React JS</span><span>Node.js</span><span>Python</span><span>Generative AI</span><span>Prompt Engineering</span><span>AI API Integration</span><span>ChatGPT</span><span>Gemini</span><span>GitHub Copilot</span><span>Chart.js</span><span>Git / SVN</span><span>CI/CD</span></div>
+</section>
+<section id="cv-projects" class="section added-section">
+ <div class="heading"><small>PROFESSIONAL PROJECTS</small><h2>— Selected Projects From My CV —</h2></div>
+ <div class="added-grid">
+  <article><h3>Property Portal — SMFG India</h3><p>Angular 19 fintech portal with OTP authentication, admin access, property CRUD, standalone architecture, lazy loading and REST API integration.</p></article>
+  <article><h3>Super App — SMFG India</h3><p>Responsive React JS fintech application with document viewing, service requests, document management and payment workflows.</p></article>
+  <article><h3>Code of Conduct — SMFG India</h3><p>Angular 19 application with Employee ID and OTP authentication, multilingual support for 8 languages, session timeout and API integration.</p></article>
+  <article><h3>Hospital Onboarding — Gmoney</h3><p>Multi-step Angular onboarding workflow with PAN validation, document upload, Reactive Forms and API-driven data management.</p></article>
+ </div>
+</section>
+<section class="dual-hire">
+ <div><small>FOR HR & RECRUITERS</small><h2>Hire Me as an Angular / Frontend Developer</h2><p>Experienced in scalable fintech and enterprise applications with Angular, React, REST APIs and modern AI-assisted development.</p><a href="#contact">DISCUSS AN OPPORTUNITY</a></div>
+ <div><small>FOR CLIENTS & BUSINESSES</small><h2>Let Me Build Your Website</h2><p>Need a portfolio, business website, responsive frontend or custom web application? I can turn your idea into a modern digital experience.</p><a href="#contact">START YOUR PROJECT</a></div>
+</section>
 
-    <!-- Audio -->
-    <audio id="music">
-        <source src="j.mp3" type="audio/mpeg">
-    </audio>
+</main>
 
-    <script>
-
-        /* Rose auto move after girl comes */
-
-        setTimeout(() => {
-
-            let rose = document.getElementById("rose");
-            rose.style.opacity = "1";
-            rose.style.animation = "giveRose 3s forwards";
-
-        }, 4000);
-
-
-        /* Show Love Text */
-
-        setTimeout(() => {
-
-            document.getElementById("loveText").style.opacity = "1";
-
-        }, 7000);
-
-
-        /* Music */
-
-        function sayYes() {
-            document.getElementById("music").play();
-        }
-
-        function sayNo() {
-            alert("No option not allowed 😜 You are Mine Forever ❤️");
-        }
-
-    </script>
-
-</body>
-
-</html>
+<section id="contact" class="contact-strip">
+ <div>✉ <span><strong>Email Me</strong><small>reshmapanchal8689@gmail.com</small></span></div>
+ <div>⌖ <span><strong>Location</strong><small>Mumbai, India</small></span></div>
+ <div class="together"><span><strong>Let's Work Together!</strong><small>Have a project in mind? Let's discuss and create something amazing together.</small></span><a href="mailto:reshmapanchal8689@gmail.com">CONTACT ME &nbsp; ✈</a></div>
+</section>
+<footer><span>© 2026 Reshma Panchal. All Rights Reserved.</span><nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a></nav><a class="top" href="#home">↑</a></footer>
+<script src="script.js"></script>
+</body></html>
